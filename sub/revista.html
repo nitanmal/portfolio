@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> NI TAN MAL </title>
+		<style>  
+        body{
+            background-color: #f275ad;
+		}
+		@media (min-width: 700px) {
+            .caja {
+                width: 100vw;
+                height: 40px;
+                background-color: #f275ad;
+                margin: 0px;
+            }
+
+            .caja1 {
+                width: 20vw;
+                float: left;
+                position: relative;
+            }
+
+            .caja2 {
+                width: 20vw;
+                float: left;
+                position: relative;
+            }	
+            .cajamenutrabajos {
+                display: none;
+                position: absolute;
+                width: 20vw;
+                background-color: #f275ad;
+                top: 100%;
+            }	
+            .caja2:hover .cajamenutrabajos {
+                display: block;
+            }
+            /*.bordes {
+                width: content-aware;
+                height: 5px;
+                border: solid 1px;
+                border-radius: 30px;
+            }
+            */
+            .etiquetas {
+                font-family: helvetica;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                margin-top: 12px;
+            }
+            a:link {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+            }
+
+            a:hover {
+                color: red;
+            }
+            .cajatitulo{
+                width: 100vw; height: 60px;
+            }
+            #titulo{
+                font-family: helvetica; font-size: 100px;
+                float: left; color: white; position: absolute; width: 95vw; border: solid 1px white;
+            }	
+            #web{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 35px ;
+                color: white;
+                margin-top: 15px; text-align: left;
+            }
+            .cajatextito{
+                width: 15vw; float: left; position: absolute;
+                left: 25px; 
+            }
+            .textito{
+                font-family: Helvetica, sans-serif;
+                font-size: 15px ;
+                color: white;
+                margin-top: 15px; text-align: left;
+            }	
+            .cajafotos{
+                width: 50vw; height: 300px;
+                position: relative;
+                overflow: hidden;
+                justify-content: center; 
+                align-items: center; margin-left: 25vw;
+            }
+            .cajafotos img {
+                max-width: 100%; top: 50%; left: 50%; 
+                position: absolute; transform: translate(-50%, -50%);
+            }
+            .cajaarrobagrande{
+				width: 100%; height: 70px; 
+				position: relative; background-color: #f275ad; float: left; 
+				overflow: hidden; margin-top: 40px; margin-bottom: 30px;
+				border-top: solid 1px white; padding: 10px;
+			}
+			.cajafotito{
+				width: 20%; height: 60px; 
+				float: left; position: relative; 
+				
+			}
+			.cajafotito img {
+				max-width: 100%; top: 40%; left: 50%; 
+				position: relative; transform: translate(-50%, -40%);
+			}
+			#arrobagrande{
+				font-family: 'Courier New';
+				font-size: 60px;
+				float: right; color: white;
+			}
+        }
+        @media (max-width: 700px) {
+			a:link {
+				color: white;
+				text-decoration: none;
+			}
+			a:visited {
+				color: white;
+			}
+			a:hover {
+				color: red;
+			}
+			.caja{
+				width: 100%; height: 100%; 
+				box-sizing: border-box;
+			}
+			.caja1{
+				width: 100%; position: relative; 
+				height: 50px; clear: both; margin: 5px; border: solid 1px white;
+				padding: 0px; 
+			}
+			.caja2{
+				width: 100%; position: relative; 
+				height: 50px; clear: both; margin: 5px; 
+				border: solid 1px white; padding: 0px; 
+				box-sizing: border-box;
+			}
+			.cajamenutrabajos{
+				width: 100%; 
+				position: absolute;
+				top: 100%;
+				margin-top: 0px;
+				display: none; 
+				background-color: #f275ad;
+				border: solid 1px white;
+				z-index: 10;
+				padding-top: 45px;
+				box-sizing: border-box;
+			}
+			.caja2:hover .cajamenutrabajos {
+				display: block;
+			}
+			/*.cajamenutrabajos:hover .cajamenutrabajos {
+				display: block;
+			}*/
+			.etiquetas{
+				font-family: Helvetica, sans-serif; font-size: 40px;
+				color: white; text-align: center; margin-top: 0px;
+			}
+			.cajatitulo {
+				width: 100%; height: 60px; 
+			}
+			#titulo{
+					font-family: helvetica; font-size: 100px;
+					float: left; margin: 0px; color: white;
+			}
+            #web{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 35px ;
+                color: white;
+                text-align: left;
+            }
+            .cajatextito{
+                width: 90%; float: left; position: relative;
+                align-items: center; margin-left: 5%;
+                
+            }
+            .textito{
+                font-family: Helvetica, sans-serif;
+                font-size: 15px ;
+                color: white;
+                text-align: justify;
+            }	
+            .cajafotos{
+                width: 100%; height: 300px;
+                position: relative;
+                overflow: hidden;
+                justify-content: center; 
+                align-items: center; 
+            }
+            .cajafotos img {
+                max-width: 100%; top: 50%; left: 50%; 
+                position: absolute; transform: translate(-50%, -50%);
+            }
+            .cajaarrobagrande{
+				width: 100%; height: 70px; 
+				position: relative; background-color:#f275ad; float: left; 
+				overflow: hidden; margin-top: 40px; margin-bottom: 30px;
+				border-top: solid 1px white; padding: 10px;
+			}
+			.cajafotito{
+				width: 30%; height: 60px; 
+				float: left; position: relative; 
+				
+			}
+			.cajafotito img {
+				max-width: 100%; top: 40%; left: 50%; 
+				position: relative; transform: translate(-50%, -40%);
+			}
+			#arrobagrande{
+				font-family: 'Courier New';
+				font-size: 40px;
+				float: right; color: white;
+			}
+        }
+
+		</style>
+	</head>
+	<body>
+		<div class="caja">
+			<div class="caja1">
+				<!-- <div class="bordes"> -->
+					<p class="etiquetas"> <a href="../index.html">  casa </a></p>
+				<!-- </div> -->
+			</div>
+			<div class="caja2">
+				<!-- <div class="bordes"> -->
+					<p class="etiquetas"> proyectos </p>
+					<div class="cajamenutrabajos">
+						<p class="etiquetas">
+							<a href="diseñografico.html"> diseño gráfico </a>
+							<br><br>
+							<a href="infografia.html"> infografia </a>
+							<br><br>
+							<a href="señaletica.html"> señaletica </a>
+						</p>
+					</div>
+				<!-- </div> -->
+			</div>
+			<div class="caja1">
+				<!-- <div class="bordes"> -->
+					<p class="etiquetas"> <a href="revista.html"> revista </a> </p>
+				<!-- </div> -->
+			</div>
+			<div class="caja1">
+				<!-- <div class="bordes"> -->
+					<p class="etiquetas"> <a href="tienda.html"> tienda </a> </p>
+				<!-- </div> -->
+			</div>
+			<div class="caja1">
+				<!-- <div class="bordes"> -->
+					<p class="etiquetas"> <a href="contacto.html"> contacto </a> </p>
+				<!-- </div> -->
+			</div>
+		<br><br><br>
+        <div class="cajatitulo">
+			<p id="titulo"> REVISTA </p>
+		</div>
+        <br><br><br><br><br><br> <br><br><br><br>
+        <div class="cajatextito">
+            <p id="web"> <a href="https://bertamoh.wixsite.com/nitanmal"> NiTanMal Online </a> </p>
+        </div>
+        <br><br><br><br><br>
+        <div class="cajatextito">
+           <p class="textito"> La música urbana española vive un momento de explosión creativa, una escena que se redefine constantemente con nuevas propuestas, sonidos frescos y una diversidad de estilos que van desde el rap y el trap hasta el reggaetón, la música electrónica y el flamenco fusión. En Ni Tan Mal, nos sumergimos en el latido de una generación que no solo ha hecho de la calle su escenario, sino también de su propio universo sonoro. Desde los artistas más consolidados hasta las nuevas voces que prometen marcar la diferencia, exploramos las diferentes ramas de este movimiento que va más allá de las fronteras musicales. En cada número, queremos acercarte la variedad, la autenticidad y las historias que definen a los protagonistas de esta revolución sonora. </p>
+        </div>
+    
+         <br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/portada.png" alt="portada">
+        </div>
+        <br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag1.png" alt="pag1">
+        </div>
+        <br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag2.png" alt="pag2">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag3.png" alt="pag3">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag4.png" alt="pag4">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag5.png" alt="pag5">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag6.png" alt="pag6">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag7.png" alt="pag7">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag8.png" alt="pag8">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag9.png" alt="pag9">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag10.png" alt="pag10">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag11.png" alt="pag11">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag12.png" alt="pag12">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag13.png" alt="pag13">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag14.png" alt="pag14">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag15.png" alt="pag15">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag15.1.png" alt="pag16">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag16.png" alt="pag17">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag17.png" alt="pag18">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag18.png" alt="pag19">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag19.png" alt="pag20">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag20.png" alt="pag21">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag21.png" alt="pag22">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag22.png" alt="pag23">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag23.png" alt="pag24">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag24.png" alt="pag25">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag25.png" alt="pag26">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag26.png" alt="pag27">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag27.png" alt="pag28">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag28.png" alt="pag29">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag29.png" alt="pag30">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag30.png" alt="pag31">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag31.png" alt="pag32">
+        </div><br><br>
+        <div class="cajafotos">
+            <img src="imagenes/revista/pag32.png" alt="pag33">
+        </div>
+
+        <div class="cajaarrobagrande">
+			<div class="cajafotito">
+			<a href="https://www.instagram.com/nitanmal__/"> <img src="../sub/imagenes/ntm.png" alt="ntm"> </a>
+			</div>
+			<a id="arrobagrande" href="https://www.instagram.com/nitanmal__/"> @nitanmal__ </a>
+		</div>
+	</body>
+
+		
+		
+		
+		
+		
+</html>

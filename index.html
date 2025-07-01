@@ -1,1 +1,228 @@
-<h1>hello world!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> NI TAN MAL </title>
+	<style>
+		body {
+				background-color: white;
+			}
+			
+		@media (min-width: 700px) {
+			.videofondo {
+				position: fixed;
+				top: 15%;
+				left: 15%;
+				width: 70%;
+				height: 70%;
+				overflow: hidden;
+				z-index: -1; 
+			}
+			.caja {
+				width: 100vw;
+				height: 40px;
+				background-color: white;
+				margin: 0px;
+			}
+
+			.caja1 {
+				width: 20vw;
+				float: left;
+				position: relative;
+				background-color: white;
+			}
+
+			.caja2 {
+				width: 20vw;
+				float: left;
+				position: relative;
+				background-color: white;
+			}
+			.cajamenutrabajos {
+				display: none;
+				position: absolute;
+				width: 20vw;
+				background-color: white;
+				top: 100%;
+			}
+			.caja2:hover .cajamenutrabajos {
+				display: block;
+			}
+			/* .bordes {
+				width: content-aware;
+				height: 5px;
+				border: solid 1px;
+				border-radius: 30px;
+			}*/
+			.etiquetas {
+				font-family: helvetica;
+				font-size: 14px;
+				color: black;
+				text-align: center;
+				margin-top: 12px;
+			}
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: red;
+			}
+			.cajaarrobagrande{
+				width: 100%; height: 70px; 
+				position: relative; background-color: white; float: left; 
+				overflow: hidden; margin-top: 40px; margin-bottom: 30px;
+				border-top: solid 1px black; padding: 10px;
+			}
+			.cajafotito{
+				width: 20%; height: 60px; 
+				float: left; position: relative; 
+				
+			}
+			.cajafotito img {
+				max-width: 100%; top: 40%; left: 50%; 
+				position: relative; transform: translate(-50%, -40%);
+			}
+			#arrobagrande{
+				font-family: 'Courier New';
+				font-size: 60px;
+				float: right;
+			}
+		}
+		@media (max-width: 700px) {
+			.videofondo {
+				position: fixed;
+				top: 30%;
+				left: 15%;
+				width: 70%;
+				height: 70%;
+				overflow: hidden;
+				z-index: -1; 
+			}
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+			}
+			a:hover {
+				color: red;
+			}
+			.caja{
+				width: 100%; height: 100%; 
+				box-sizing: border-box; background-color: white;
+			}
+			.caja1{
+				width: 100%; position: relative; 
+				height: 50px; clear: both; margin: 5px; border: solid 1px black;
+				padding: 0px; background-color: white;
+			}
+			.caja2{
+				width: 100%; position: relative; 
+				height: 50px; clear: both; margin: 5px; 
+				border: solid 1px black; padding: 0px; 
+				box-sizing: border-box; background-color: white;
+			}
+			.cajamenutrabajos{
+				width: 100%; 
+				position: absolute;
+				top: 100%;
+				margin-top: 0px;
+				display: none; 
+				background-color: white;
+				border: solid 1px black;
+				z-index: 10;
+				padding-top: 45px;
+				box-sizing: border-box;
+			}
+			.caja2:hover .cajamenutrabajos {
+				display: block;
+			}
+			/*.cajamenutrabajos:hover .cajamenutrabajos {
+				display: block;
+			}*/
+			.etiquetas{
+				font-family: Helvetica, sans-serif; font-size: 40px;
+				color: black; text-align: center; margin-top: 0px;
+			}
+			.cajaarrobagrande{
+				width: 100%; height: 70px; 
+				position: relative; background-color: white; float: left; 
+				overflow: hidden; margin-top: 40px; margin-bottom: 30px;
+				border-top: solid 1px black; padding: 10px;
+			}
+			.cajafotito{
+				width: 30%; height: 60px; 
+				float: left; position: relative; 
+				
+			}
+			.cajafotito img {
+				max-width: 100%; top: 40%; left: 50%; 
+				position: relative; transform: translate(-50%, -40%);
+			}
+			#arrobagrande{
+				font-family: 'Courier New';
+				font-size: 40px;
+				float: right;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<video autoplay muted loop class="videofondo">
+		<source src="imagenes/ntm.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<div class="caja">
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="index.html"> </a> casa </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja2">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> proyectos </p>
+			<!-- </div> -->
+			<div class="cajamenutrabajos">
+				<p class="etiquetas">
+					<a href="sub/diseñografico.html"> diseño gráfico </a>
+					<br><br>
+					<a href="sub/infografia.html"> infografia </a>
+					<br><br>
+					<a href="sub/señaletica.html"> señaletica </a>
+				</p>
+			</div>
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+				<p class="etiquetas"> <a href="sub/revista.html"> revista </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="sub/tienda.html"> tienda </a> </p>
+			<!-- </div> -->
+		</div>
+		<div class="caja1">
+			<!-- <div class="bordes"> -->
+			<p class="etiquetas"> <a href="sub/contacto.html"> contacto </a> </p>
+			<!-- </div> -->
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="cajaarrobagrande">
+		<div class="cajafotito">
+		<a href="https://www.instagram.com/nitanmal__/"> <img src="sub/imagenes/ntm.png" alt="ntm"> </a>
+		</div>
+		<a id="arrobagrande" href="https://www.instagram.com/nitanmal__/"> @nitanmal__ </a>
+	</div>
+</body>
+
+</html>
